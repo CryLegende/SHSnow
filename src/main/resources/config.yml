@@ -1,0 +1,49 @@
+# SHSnow
+#
+# Fait tomber des flocons autour des joueurs dans les mondes choisis. Les flocons ne sont envoyés qu'au joueur
+# concerné et ne tombent qu'à ciel ouvert : une colonne couverte par un bloc n'en reçoit pas sous ce bloc.
+# Chaque joueur peut couper la neige pour lui seul, son choix est gardé dans ses données de joueur.
+#
+# Commandes :
+#   /snow [toggle]   Active ou coupe la neige pour soi.
+#   /snow reload     Recharge config.yml et messages.yml.
+#
+# Permissions :
+#   shsnow.toggle   /snow et /snow toggle (tout le monde par défaut).
+#   shsnow.reload   /snow reload (op par défaut).
+
+# Mondes où il neige (noms exacts, majuscules comprises).
+worlds:
+  - spawn
+  - Christmas
+
+# Coupe la neige dans un monde où il pleut ou neige déjà.
+stop-in-rain: true
+
+# Particules utilisées à tour de rôle, par leur identifiant Minecraft.
+# Seules les particules sans réglage (ni couleur, ni bloc, ni objet) sont acceptées.
+# Liste : https://minecraft.wiki/w/Particles_(Java_Edition)
+particles:
+  - wax_off
+  - snowflake
+  - end_rod
+
+# Nombre de flocons tirés autour de chaque joueur à chaque vague. Ceux qui tombent sous un toit ne sont pas envoyés.
+particles-per-player: 150
+
+# Distance maximale entre le joueur et un flocon, sur chaque axe (en blocs).
+radius: 25
+
+# Vitesse de chute des flocons (en blocs par tick).
+fall-speed: 0.09
+
+# Intervalle entre deux vagues de flocons (en ticks, 20 ticks = 1 seconde).
+interval-ticks: 11
+
+roof:
+  # Blocs qui ne comptent pas comme un toit : la neige passe au travers.
+  ignored-blocks:
+    - barrier
+  # Durée pendant laquelle la hauteur du toit de chaque colonne est gardée en mémoire (en secondes).
+  # Un toit posé ou retiré est pris en compte au plus tard après ce délai.
+  cache-seconds: 10

@@ -1,0 +1,14 @@
+name: SHSnow
+version: '${project.version}'
+main: org.Cry_Legende.sHSnow.SHSnow
+api-version: '1.21'
+author: Cry_Legende
+description: Chute de neige autour des joueurs dans les mondes choisis.
+
+permissions:
+  shsnow.toggle:
+    description: Utiliser /snow pour activer ou couper la neige.
+    default: true
+  shsnow.reload:
+    description: Utiliser /snow reload.
+    default: op
