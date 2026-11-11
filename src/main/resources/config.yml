@@ -5,12 +5,17 @@
 # Chaque joueur peut couper la neige pour lui seul, son choix est gardé dans ses données de joueur.
 #
 # Commandes :
-#   /snow [toggle]   Active ou coupe la neige pour soi.
-#   /snow reload     Recharge config.yml et messages.yml.
+#   /snow [toggle]    Active ou coupe la neige pour soi (aussi /shsnow et /shsnow toggle, tant qu'on n'a pas de
+#                     permission d'administration).
+#   /shsnow reload    Recharge config.yml et messages.yml ; si un fichier est illisible, la configuration précédente
+#                     reste active. Marche aussi depuis la console (ancienne forme : /snow reload).
 #
 # Permissions :
-#   shsnow.toggle   /snow et /snow toggle (tout le monde par défaut).
-#   shsnow.reload   /snow reload (op par défaut).
+#   shsnow.toggle         /snow et /snow toggle (tout le monde par défaut).
+#   shsnow.admin          Toutes les sous-commandes de /shsnow (op par défaut).
+#   shsnow.admin.reload   /shsnow reload (op par défaut).
+#
+# Les textes sont dans messages.yml.
 
 # Mondes où il neige (noms exacts, majuscules comprises).
 worlds:

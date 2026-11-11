@@ -9,6 +9,11 @@ permissions:
   shsnow.toggle:
     description: Utiliser /snow pour activer ou couper la neige.
     default: true
-  shsnow.reload:
-    description: Utiliser /snow reload.
+  shsnow.admin:
+    description: Toutes les sous-commandes de /shsnow.
+    default: op
+    children:
+      shsnow.admin.reload: true
+  shsnow.admin.reload:
+    description: Utiliser /shsnow reload.
     default: op

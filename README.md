@@ -29,16 +29,17 @@ Utilisé sur : **Opale**.
 | Commande | Description | Permission |
 |---|---|---|
 | `/snow` ou `/snow toggle` | Active ou coupe la neige pour soi. | `shsnow.toggle` |
-| `/snow reload` | Recharge `config.yml` et `messages.yml`. | `shsnow.reload` |
+| `/shsnow reload` | Recharge `config.yml` et `messages.yml` ; si un fichier est illisible, la configuration précédente reste active. Marche aussi depuis la console. | `shsnow.admin.reload` |
 
-Alias : `/shsnow`.
+`/shsnow` et `/shsnow toggle` font la même chose que `/snow` pour qui n'a pas de permission d'administration ; avec une permission d'administration, `/shsnow` affiche l'usage. L'ancienne forme `/snow reload` reste acceptée.
 
 ## Permissions
 
 | Permission | Description | Par défaut |
 |---|---|---|
 | `shsnow.toggle` | Utiliser /snow pour activer ou couper la neige. | tout le monde |
-| `shsnow.reload` | Utiliser /snow reload. | `op` |
+| `shsnow.admin` | Toutes les sous-commandes de /shsnow. | `op` |
+| `shsnow.admin.reload` | Utiliser /shsnow reload. | `op` |
 
 ## Configuration
 

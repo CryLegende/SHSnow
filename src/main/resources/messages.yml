@@ -1,4 +1,13 @@
+# Messages de SHSnow, codes couleur &. Un message vide ("") n'est pas envoyé.
+#
+# Placeholders :
+#   {commands}   commandes que l'expéditeur peut utiliser (usage)
+#   {file}       fichier illisible (reload-failed)
+#   {error}      erreur de lecture du fichier (reload-failed)
+
 enabled: "&7&l« &a&lSH &8&l» &7Neige &aactivée&7."
 disabled: "&7&l« &a&lSH &8&l» &7Neige &adésactivée&7, &a/snow &7pour la remettre."
 players-only: "&7&l« &c&lSH &8&l» &7Commande réservée aux &cjoueurs&7."
+usage: "&7&l« &e&lSH &8&l» &7Utilisation : &e{commands}&7."
 reloaded: "&7&l« &a&lSH &8&l» &7Configuration de SHSnow &arechargée&7."
+reload-failed: "&7&l« &c&lSH &8&l» &7Rechargement &cimpossible&7, &c{file} &7illisible : &c{error}&7. La configuration précédente reste active."
