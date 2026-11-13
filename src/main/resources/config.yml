@@ -19,8 +19,8 @@
 
 # Mondes où il neige (noms exacts, majuscules comprises).
 worlds:
-  - spawn
-  - Christmas
+  - world
+  - world_nether
 
 # Coupe la neige dans un monde où il pleut ou neige déjà.
 stop-in-rain: true
